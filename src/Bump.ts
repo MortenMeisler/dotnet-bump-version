@@ -80,12 +80,12 @@ export class Bump {
             return `${matches[2]}.${versionPart}.${matches[4]}.${matches[5]}`;
         }
 
-        if (options === "--patch") {
+        // if (options === "--patch") {
             const versionPart = +matches[4].toString() + 1;
             return `${matches[2]}.${matches[3]}.${versionPart}.${matches[5]}`;
-        }
+        // }
 
-        const versionPart = +matches[5].toString() + 1;
-        return `${matches[2]}.${matches[3]}.${matches[4]}.${versionPart}`;
+        // const versionPart = +matches[5].toString() + 1;
+        // return `${matches[2]}.${matches[3]}.${matches[4]}.${versionPart}`;
     }
 }
